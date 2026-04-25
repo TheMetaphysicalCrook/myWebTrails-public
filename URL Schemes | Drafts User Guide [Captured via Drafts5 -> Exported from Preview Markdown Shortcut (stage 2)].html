@@ -1,0 +1,550 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta charset="utf-8">
+<style>
+body {
+background-size: cover;
+padding-left: env(safe-area-inset-left);
+padding-right: env(safe-area-inset-right);
+padding-top: env(safe-area-inset-top);
+}
+h1{
+    font-family: -apple-system;
+    color: black;
+    font-weight: 800;
+    font-size: 2em;
+}
+h2 {
+    font-family: -apple-system;
+    font-weight: 800;
+    color: black;
+    font-size: 2em;
+}
+h3,h4 {
+    font-family: -apple-system;
+    font-weight: 800;
+    color: black;
+    font-size: 1.5em;
+}
+p, ul{
+    font-family: -apple-system;
+    font-weight: 400;
+    color: black;
+    font-size: 1em;
+}
+blockquote {
+    font-family: -apple-system;
+    font-weight: 300;
+    color: black;
+    font-size: 1em;
+    font-style: italic;
+}
+ol{
+    font-family: -apple-system;
+    font-weight: 400;
+    color: black;
+    font-size: 1em;
+    margin: 15px;
+}
+a {
+color: navy;
+}
+}
+</style>
+<title>Markdown Preview</title>
+<p>&lt;!DOCTYPE html><br />
+<html dir="auto"></p>
+<p><head><br />
+<title>URL Schemes | Drafts User Guide</title><br />
+<meta charset="UTF-8"><br />
+<meta name="viewport" content="width=device-width, initial-scale=1"><br />
+<style><br />
+@charset "utf-8";</p>
+<p>:root {<br />
+--main-bg-color: rgba(255, 255, 255, 0.952);<br />
+--main-color: black;<br />
+--alternate-bg-color: #f6f6f6;<br />
+--alternate-color: #222222;<br />
+--main-border-color: #BBBBBB;<br />
+--link-color: #627EC9;<br />
+}</p>
+<p>@media (prefers-color-scheme: dark) {<br />
+:root {<br />
+--main-bg-color: #111111;<br />
+--main-color: #eeeeee;<br />
+--alternate-bg-color: #333333;<br />
+--alternate-color: #cccccc;<br />
+--main-border-color: #515151;<br />
+--link-color: #627EC9;<br />
+}<br />
+}</p>
+<p>html {<br />
+font-size: 100%;<br />
+font-family: "Avenir Next", "Avenir", -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;<br />
+line-height: 1.4;<br />
+}</p>
+<p>body {<br />
+margin: 0;<br />
+padding: 1em;<br />
+background-color: var(--main-bg-color);<br />
+color: var(--main-color);<br />
+}</p>
+<p>@media (max-device-width: 480px) {}</p>
+<p>@media (min-device-width: 481px) {<br />
+body {<br />
+margin: auto;<br />
+max-width: 600px;<br />
+}<br />
+}</p>
+<p>h1, h2, h3, h4, h5, h6 {<br />
+font-weight: 600;<br />
+}</p>
+<p>blockquote {<br />
+font-style: italic;<br />
+margin: 1.5em 1.5em;<br />
+padding: .5em 1em;<br />
+border-left: 2px solid var(--main-border-color);<br />
+background-color: var(--alternate-bg-color);<br />
+color: var(--alternate-color);<br />
+border-radius: 3px;<br />
+}</p>
+<p>blockquote p:first-child {<br />
+margin-top: .25em;<br />
+}</p>
+<p>blockquote p:last-child {<br />
+margin-bottom: .25em;<br />
+}</p>
+<p>hr {<br />
+display: block;<br />
+border: 0;<br />
+border-top: 1px solid var(--main-border-color);<br />
+}</p>
+<p>a {<br />
+color: var(--link-color);<br />
+}</p>
+<p>pre {<br />
+display: block;<br />
+overflow: scroll;<br />
+max-width: 100%;<br />
+background-color: var(--alternate-bg-color);<br />
+padding: .5em 1em;<br />
+margin: 1em 0;<br />
+border: 1px dotted var(--main-border-color);<br />
+border-radius: 3px;<br />
+}</p>
+<p>code {<br />
+background-color: var(--alternate-bg-color);<br />
+color: var(--alternate-color);<br />
+font-family: Menlo, Courier, sans-serif;<br />
+font-size: .85em;<br />
+padding: 2px 3px;<br />
+border: 1px dotted var(--main-border-color);<br />
+border-radius: 3px;<br />
+}</p>
+<p>pre>code {<br />
+border: none;<br />
+}</p>
+<p>table {<br />
+margin: 1.5em 0;<br />
+border: 1px solid var(--main-border-color);<br />
+border-collapse: collapse;<br />
+}</p>
+<p>th {<br />
+font-weight: 500;<br />
+padding: .25em .5em;<br />
+background: var(--alternate-bg-color);<br />
+border: 1px solid var(--main-border-color);<br />
+}</p>
+<p>td {<br />
+padding: .25em .5em;<br />
+border: 1px solid var(--main-border-color);<br />
+}</p>
+<p>img {<br />
+max-width: 100%;<br />
+}<br />
+</style><br />
+</head></p>
+<p><body><br />
+<h1>URL Schemes | Drafts User Guide</h1></p>
+<pre><code>source: [URL Schemes | Drafts User Guide](https://docs.getdrafts.com/docs/automation/urlschemes)
+</code></pre><div class="TOC">
+
+<ul>
+<li><a href="#urlschemesdraftsuserguide">URL Schemes | Drafts User Guide</a></li>
+<li><a href="#urlschemes">URL Schemes</a>
+<ul>
+<li><a href="#clipboardparameter">Clipboard Parameter</a></li>
+<li><a href="#tableofcontents">Table of Contents</a></li>
+<li><a href="#supportedactions">Supported Actions</a>
+<ul>
+<li><a href="#create">/create</a></li>
+<li><a href="#open">/open</a></li>
+<li><a href="#get">/get</a></li>
+<li><a href="#getcurrentdraft">/getCurrentDraft</a></li>
+<li><a href="#prepend">/prepend</a></li>
+<li><a href="#append">/append</a></li>
+<li><a href="#replacerange">/replaceRange</a></li>
+<li><a href="#search">/search</a></li>
+<li><a href="#quicksearch">/quickSearch</a></li>
+<li><a href="#commandpalette">/commandPalette</a></li>
+<li><a href="#actionsearch">/actionSearch</a></li>
+<li><a href="#workspace">/workspace</a></li>
+<li><a href="#loadactiongroup">/loadActionGroup</a></li>
+<li><a href="#loadactionbargroup">/loadActionBarGroup</a></li>
+<li><a href="#runaction">/runAction</a></li>
+<li><a href="#capture">/capture</a></li>
+<li><a href="#dictate">/dictate</a></li>
+<li><a href="#scandocument">/scanDocument</a></li>
+<li><a href="#arrange">/arrange</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><ol>
+<li><a href="/automation/">Automation</a></li>
+<li>URL Schemes</li>
+</ol><h1>URL Schemes</h1><p>Drafts implements URL actions based on <a href="http://x-callback-url.com/">the x-callback-url specification</a>, and registers the <strong>drafts:</strong> URL scheme. All actions below should be formatted as follows:</p><ul>
+<li><code>drafts://x-callback-url/[actionName]?[queryParameters]</code></li>
+</ul><p>Note that the <code>x-callback-url</code> host is optional in all <code>drafts</code> URLs. It is supported for consistency with the specification, but functionally it is not required and <code>drafts://[actionName]...</code> will have the same result as <code>drafts://x-callback-url/[actionName]...</code></p><p>All URLs should be proper valid URLs with URL encoded values in query arguments. With a few exceptions, all actions support x-callback-url x-success, x-error and x-cancel arguments where appropriate.</p><blockquote>
+<h4>Clipboard Parameter</h4>
+
+<p>URLs which accept an incoming <code>text</code> parameter, can use the special markup <code>||clipboard||</code> in the parameter and Drafts will insert the current text from the clipboard.</p>
+</blockquote><p><em>NOTE: Some URL scheme parameters and actions require a Pro subscription.</em> <a href="https://docs.getdrafts.com/draftspro">PRO</a></p><h4>Table of Contents</h4><ol>
+<li><a href="#create">/create</a></li>
+<li><a href="#open">/open</a></li>
+<li><a href="#get">/get</a></li>
+<li><a href="#getcurrentdraft">/getCurrentDraft</a></li>
+<li><a href="#prepend">/prepend</a></li>
+<li><a href="#append">/append</a></li>
+<li><a href="#replacerange">/replaceRange</a></li>
+<li><a href="#search">/search</a></li>
+<li><a href="#quicksearch">/quickSearch</a></li>
+<li><a href="#commandpalette">/commandPalette</a></li>
+<li><a href="#actionsearch">/actionSearch</a></li>
+<li><a href="#workspace">/workspace</a></li>
+<li><a href="#loadactiongroup">/loadActionGroup</a></li>
+<li><a href="#loadactionbargroup">/loadActionBarGroup</a></li>
+</ol><blockquote>
+<ol>
+<li><a href="#runaction">/runAction</a></li>
+<li><a href="#capture">/capture</a></li>
+</ol>
+</blockquote><ol>
+<li><a href="#dictate">/dictate</a></li>
+<li><a href="#scandocument">/scanDocument</a></li>
+<li><a href="#arrange">/arrange</a>
+[s:body]</li>
+</ol><h2>Supported Actions</h2><h3>/create</h3><p><a href="#">iOS</a> <a href="#">macOS</a></p><p>Create a new draft with the content passed in the &#8220;text&#8221; argument. If an x-success url is provided, it will be called the <code>uuid</code> parameter indicating the UUID of the draft which was created.</p><ul>
+<li><strong>Arguments</strong>
+
+<ul>
+<li><strong>text</strong> <em>[string, required]</em> : Text to be used at the content of the new draft.</li>
+<li><strong>tag</strong> <em>[string]</em> : Name of a tag to attach to the draft. Parameter can appear multiple times to add more than one tag.</li>
+<li><strong>folder</strong> <em>[inbox|archive, optional]</em> : Location for the new draft. Default: inbox</li>
+<li><strong>flagged</strong> <em>[boolean, optional]</em> : Should the newly created draft by flagged. Default: false</li>
+<li><strong>action</strong> <em>[string, optional]</em> : Name of an action in the action list. If provided, this action will be run on the specified draft.</li>
+<li><strong>allowEmpty</strong> <em>[boolean, optional]</em> : If an action parameter is provided, adding <code>allowEmpty=false</code> to the URL will prevent that action from running if the text is empty. This can be used to terminate a loop of x-callback-urls running on lines of a draft.</li>
+<li><strong>retParam</strong> <em>[string, optional]</em> : The name of the argument to use to pass the draft UUID back to the x-success URL. Defaults to &#8220;uuid&#8221;, but if the requesting app expects another value (like Workflow&#8217;s &#8220;input&#8221;) use this argument to override.</li>
+</ul></li>
+<li><strong>Examples</strong>
+
+<ul>
+<li><code>drafts://x-callback-url/create?text=Hello%20World</code>
+
+<ul>
+<li>Create new draft with the content &#8220;Hello World&#8221;</li>
+</ul></li>
+</ul></li>
+</ul><p><hr /></p>
+<h3>/open</h3><p><a href="#">iOS</a> <a href="#">macOS</a></p><p>Open an existing draft based on the UUID argument.</p><ul>
+<li><strong>Arguments</strong>
+
+<ul>
+<li><strong>uuid</strong> <em>[string, optional]</em> : The UUID identifier for a draft.</li>
+<li><strong>title</strong> <em>[string, optional]</em> : The title of the draft to open. Drafts will search for drafts matching the title provided. If more than one draft matching the title is found, a warning will be issued, and a search opened to help identify the correct draft. Title parameters can also support navigation to specific markers with the target draft, using the format <code>Title/Marker-Label</code>. Typical use case would be for navigation within Markdown drafts, where passing a <code>title</code> parameter of <code>MyDraft/Header Name</code> would open the &#8220;MyDraft&#8221; draft, and scroll to a &#8220;# Header Name&#8221; header.</li>
+<li><strong>marker</strong> <em>[string, optional]</em> : The name of a navigation marker in the draft to navigate to after opening. Works like including the marker in the title parameter above, but can be combined with <code>uuid</code> to specify a particular draft more accurately.</li>
+<li><strong>action</strong> <em>[string, optional]</em> : Name of an action in the action list. If provided, this action will be run on the specified draft.</li>
+<li><strong>allowEmpty</strong> <em>[boolean, optional]</em> : If an action parameter is provided, adding <code>allowEmpty=false</code> to the URL will prevent that action from running if the text is empty. This can be used to terminate a loop of x-callback-urls running on lines of a draft.</li>
+<li><strong>allowCreate</strong> <em>[boolean, optional]</em> : Using in conjunction with the <code>title</code> parameter, if <code>allowCreate</code> is passed and is &#8220;true&#8221;, and no draft matching the title value is found, the user will be prompted asking if they wish to create the draft with that title.</li>
+<li><strong>showDraftList</strong> <em>[boolean, optional]</em> : Set visibility of draft list.</li>
+<li><strong>showActionList</strong> <em>[boolean, optional]</em> : Set visibility of action list.</li>
+<li><strong>loadWorkspace</strong> <em>[string, optional]</em> : Name of workspace to apply.</li>
+<li><strong>loadActionGroup</strong> <em>[string, optional]</em> : Name of action group to load in action list.</li>
+<li><strong>loadActionBarGroup</strong> <em>[string, optional]</em> : Name of action group to load in action bar.</li>
+</ul></li>
+<li><strong>Examples</strong>
+
+<ul>
+<li><code>drafts://x-callback-url/open?uuid=UUID-TO-VALID-DRAFT</code>
+
+<ul>
+<li>Open the draft in the editor with the UUID provided.</li>
+</ul></li>
+</ul></li>
+</ul><p><hr /></p>
+<h3>/get</h3><p><a href="#">iOS</a> <a href="#">macOS</a></p><p>Return the current content of the draft specified by the UUID argument as an argument to the x-success URL provided.</p><ul>
+<li><strong>Arguments</strong>
+
+<ul>
+<li><strong>uuid</strong> <em>[string, required]</em> : The UUID identifier for a draft.</li>
+<li><strong>retParam</strong> <em>[string, optional]</em> : The name of the argument to use to pass the draft content back to the x-success URL. Defaults to &#8220;text&#8221;, but if the requesting app expects another value (like Workflow&#8217;s &#8220;input&#8221;) use this argument to override.</li>
+</ul></li>
+<li><strong>Examples</strong>
+
+<ul>
+<li><code>drafts://x-callback-url/get?uuid=UUID-TO-VALID-DRAFT&amp;x-success=APP-URL</code>
+
+<ul>
+<li>Retrieves the content of the identified draft, and calls the x-success URL with the argument <code>text=DRAFT-CONTENT</code> added.</li>
+</ul></li>
+</ul></li>
+</ul><p><hr /></p>
+<h3>/getCurrentDraft</h3><p><a href="#">iOS</a> <a href="#">macOS</a></p><p>Return the information about the current draft loaded in the editor. To use, you must include an <code>x-success</code> callback URL. Drafts will call the <code>x-success</code> URL with <code>uuid</code>, <code>url</code>, <code>title</code>, <code>content</code> parameters with values related to the current draft. Mostly useful to access a link to the current draft from outside the app.</p><ul>
+<li><strong>Arguments</strong>
+
+<ul>
+<li><strong>none</strong></li>
+</ul></li>
+<li><strong>Examples</strong>
+
+<ul>
+<li><code>drafts://x-callback-url/getCurrentDraft?x-success=[callbackurl]</code></li>
+</ul></li>
+</ul><p><hr /></p>
+<h3>/prepend</h3><p><a href="#">iOS</a> <a href="#">macOS</a></p><p>Prepend the passed text to the beginning of a draft identified by the UUID argument.</p><ul>
+<li><strong>Arguments</strong>
+
+<ul>
+<li><strong>uuid</strong> <em>[string, required]</em> : The UUID identifier for a draft.</li>
+<li><strong>text</strong> <em>[string, required]</em> : Text to add.</li>
+<li><strong>action</strong> <em>[string, optional]</em> : Name of an action in the action list. If provided, this action will be run on the specified draft.</li>
+<li><strong>allowEmpty</strong> <em>[boolean, optional]</em> : If an action parameter is provided, adding <code>allowEmpty=false</code> to the URL will prevent that action from running if the text is empty. This can be used to terminate a loop of x-callback-urls running on lines of a draft.</li>
+<li><strong>tag</strong> <em>[string]</em> : Name of a tag to attach to the draft. Parameter can appear multiple times to add more than one tag.</li>
+</ul></li>
+<li><strong>Examples</strong>
+
+<ul>
+<li><code>drafts://x-callback-url/prepend?uuid=UUID-TO-VALID-DRAFT&amp;text=TEXT-TO-ADD</code>
+
+<ul>
+<li>Adds &#8220;TEXT-TO-ADD&#8221; to the beginning of the draft.</li>
+</ul></li>
+</ul></li>
+</ul><p><hr /></p>
+<h3>/append</h3><p><a href="#">iOS</a> <a href="#">macOS</a></p><p>Append the passed text to the end of a draft identified by the UUID argument.</p><ul>
+<li><strong>Arguments</strong>
+
+<ul>
+<li><strong>uuid</strong> <em>[string, required]</em> : The UUID identifier for a draft.</li>
+<li><strong>text</strong> <em>[string, required]</em> : Text to add.</li>
+<li><strong>action</strong> <em>[string, optional]</em> : Name of an action in the action list. If provided, this action will be run on the specified draft.</li>
+<li><strong>allowEmpty</strong> <em>[boolean, optional]</em> : If an action parameter is provided, adding <code>allowEmpty=false</code> to the URL will prevent that action from running if the text is empty. This can be used to terminate a loop of x-callback-urls running on lines of a draft.</li>
+<li><strong>tag</strong> <em>[string]</em> : Name of a tag to attach to the draft. Parameter can appear multiple times to add more than one tag.</li>
+</ul></li>
+<li><strong>Examples</strong>
+
+<ul>
+<li><code>drafts://x-callback-url/append?uuid=UUID-TO-VALID-DRAFT&amp;text=TEXT-TO-ADD</code>
+
+<ul>
+<li>Adds &#8220;TEXT-TO-ADD&#8221; to the end of the draft.</li>
+</ul></li>
+</ul></li>
+</ul><p><hr /></p>
+<h3>/replaceRange</h3><p><a href="#">iOS</a> <a href="#">macOS</a></p><p>Replace content in an existing draft, based on a range.</p><ul>
+<li><strong>Arguments</strong>
+
+<ul>
+<li><strong>uuid</strong> <em>[string, required]</em> : The UUID identifier for a draft.</li>
+<li><strong>text</strong> <em>[string, required]</em> : Text to insert in the specified range</li>
+<li><strong>start</strong> <em>[integer, required]</em> : Start position of the range to replace.</li>
+<li><strong>length</strong> <em>[integer, required]</em> : Number of characters in the range to replace.</li>
+</ul></li>
+<li><strong>Examples</strong>
+
+<ul>
+<li><code>drafts://x-callback-url/replaceRange?uuid=UUID-TO-VALID-DRAFT&amp;text=TEXT-TO-INSERT&amp;start=0&amp;length=10</code>
+
+<ul>
+<li>Open the draft and replace characters 0 through 10 with TEXT-TO-INSERT.</li>
+</ul></li>
+</ul></li>
+</ul><p><hr /></p>
+<h3>/search</h3><p><a href="#">iOS</a> <a href="#">macOS</a></p><p>Open drafts directly to the draft search field.</p><ul>
+<li><strong>Arguments</strong>
+
+<ul>
+<li><strong>query</strong> <em>[string, optional]</em> : Initial text to use in the search.</li>
+<li><strong>tag</strong> <em>[string, optional]</em> : Tag to use to filter the query.</li>
+<li><strong>folder</strong> <em>[string, optional]</em> : If provided, select the associated folder tab in the draft list. Supported values: <code>inbox</code>, <code>archive</code>, <code>flagged</code>, <code>all</code>, <code>trash</code>.</li>
+</ul></li>
+<li><strong>Examples</strong>
+
+<ul>
+<li><code>drafts://x-callback-url/search?query=QUERY-TEXT</code></li>
+</ul></li>
+</ul><p><hr /></p>
+<h3>/quickSearch</h3><p><a href="#">iOS</a> <a href="#">macOS</a></p><p>Open drafts directly to quick search, if available.</p><ul>
+<li><strong>Arguments</strong>
+
+<ul>
+<li><strong>query</strong> <em>[string, optional]</em> : Initial text to use in the search.</li>
+</ul></li>
+<li><strong>Examples</strong>
+
+<ul>
+<li><code>drafts://x-callback-url/quickSearch?query=QUERY-TEXT</code></li>
+</ul></li>
+</ul><p><hr /></p>
+<h3>/commandPalette</h3><p><a href="#">iOS</a> <a href="#">macOS</a></p><p>Open drafts directly to command palette, if available.</p><ul>
+<li><strong>Arguments</strong>
+
+<ul>
+<li><strong>query</strong> <em>[string, optional]</em> : Initial text to use in the search.</li>
+</ul></li>
+<li><strong>Examples</strong>
+
+<ul>
+<li><code>drafts://x-callback-url/commandPalette?query=QUERY-TEXT</code></li>
+</ul></li>
+</ul><p><hr /></p>
+<h3>/actionSearch</h3><p><a href="#">iOS</a> <a href="#">macOS</a></p><p>Open drafts directly to search of the action list.</p><ul>
+<li><strong>Arguments</strong>
+
+<ul>
+<li><strong>query</strong> <em>[string, optional]</em> : Initial text to use in the search.</li>
+</ul></li>
+<li><strong>Examples</strong>
+
+<ul>
+<li><code>drafts://x-callback-url/actionSearch?query=QUERY-TEXT</code></li>
+</ul></li>
+</ul><p><hr /></p>
+<h3>/workspace</h3><p><a href="#">iOS</a> <a href="#">macOS</a></p><p>Open drafts directly the draft list with a named workspace selected.</p><ul>
+<li><strong>Arguments</strong>
+
+<ul>
+<li><strong>name</strong> <em>[string, required]</em> : Name of a saved workspace to load. Use &#8220;Default&#8221; as name to clear filters and load the default workspace.</li>
+</ul></li>
+<li><strong>Examples</strong>
+
+<ul>
+<li><code>drafts://x-callback-url/workspace?name=WORKSPACE-NAME</code></li>
+</ul></li>
+</ul><p><hr /></p>
+<h3>/loadActionGroup</h3><p><a href="#">iOS</a> <a href="#">macOS</a></p><p>Load an action group in the action list side panel.</p><ul>
+<li><strong>Arguments</strong>
+
+<ul>
+<li><strong>name</strong> <em>[string, required]</em> : Name of a valid action group to load.</li>
+</ul></li>
+<li><strong>Examples</strong>
+
+<ul>
+<li><code>drafts://x-callback-url/loadActionGroup?name=GROUP-NAME</code></li>
+</ul></li>
+</ul><p><hr /></p>
+<h3>/loadActionBarGroup</h3><p><a href="#">iOS</a> <a href="#">macOS</a></p><p>Load an action group in the action bar row.</p><ul>
+<li><strong>Arguments</strong>
+
+<ul>
+<li><strong>name</strong> <em>[string, required]</em> : Name of a valid action group to load.</li>
+</ul></li>
+<li><strong>Examples</strong>
+
+<ul>
+<li><code>drafts://x-callback-url/loadKeyboardActionGroup?name=GROUP-NAME</code></li>
+</ul></li>
+</ul><p><hr /></p>
+<h3>/runAction</h3><p><a href="#">iOS</a> <a href="#">macOS</a></p><p>Run a drafts action on the passed text without saving that text to a draft.</p><ul>
+<li><strong>Arguments</strong>
+
+<ul>
+<li><strong>text</strong> <em>[string, required]</em> : Text to add.</li>
+<li><strong>action</strong> <em>[string, optional]</em> : Name of an action in the action list. If provided, this action will be run on the specified draft.</li>
+<li><strong>allowEmpty</strong> <em>[boolean, optional]</em> : If an action parameter is provided, adding <code>allowEmpty=false</code> to the URL will prevent that action from running if the text is empty. This can be used to terminate a loop of x-callback-urls running on lines of a draft.</li>
+</ul></li>
+<li><strong>Examples</strong>
+
+<ul>
+<li><code>drafts://x-callback-url/runAction?text=TEXT&amp;action=VALID-ACTION-NAME</code>
+
+<ul>
+<li>If found, runs the VALID-ACTION-NAME action on an unsaved draft containing &#8220;TEXT&#8221;.</li>
+</ul></li>
+</ul></li>
+</ul><p><hr /></p>
+<h3>/capture</h3><p><a href="#">iOS</a> <a href="#">macOS</a></p><p>Open Drafts to a new capture window, like used in the Share extension, which can be used to create a new draft, or append-prepend to existing drafts.</p><ul>
+<li><strong>Arguments</strong>
+
+<ul>
+<li><strong>text</strong> <em>[string, optional]</em> : Initial text for the capture window.</li>
+<li><strong>tag</strong> <em>[string]</em> : Comma-separated list of tags to set as the initial tags assignments.</li>
+</ul></li>
+<li><strong>Examples</strong>
+
+<ul>
+<li><code>drafts://x-callback-url/capture?text=INITIAL-TEXT</code></li>
+</ul></li>
+</ul><p><hr /></p>
+<h3>/dictate</h3><p><a href="#">iOS</a> <a href="#">macOS</a></p><p>Open Drafts dictation interface. The resulting text is passed to the <code>x-success</code> callback, and saved as a draft unless the <code>save</code> parameter is used to disable saving.</p><ul>
+<li><strong>Arguments</strong>
+
+<ul>
+<li><strong>locale</strong> <em>[string, optional]</em> : Locale identifier to use for dictation, in the standard language-country abbreviated format. Examples: en-US (English-United States), it-IT (Italian-Italy), es-MX (Spanish-Mexico), etc. Any locale supported by Siri dictation can be used.</li>
+<li><strong>save</strong> <em>[boolean]</em> : Default to &#8220;true&#8221;. If &#8220;false&#8221;, the results of the dictation will be returned to the callback, but <em>not</em> saved as a draft in Drafts.</li>
+<li><strong>retParam</strong> <em>[string, optional]</em> : The name of the argument to use to pass the draft content back to the x-success URL. Defaults to &#8220;text&#8221;, but if the requesting app expects another value (like Workflow&#8217;s &#8220;input&#8221;) use this argument to override.</li>
+</ul></li>
+<li><strong>Examples</strong>
+
+<ul>
+<li><code>drafts://x-callback-url/dictate?x-success=APP-URL</code>
+
+<ul>
+<li>Retrieves the content of the identified draft, and calls the x-success URL with the argument <code>text=DICTATED-TEXT</code> added.</li>
+</ul></li>
+</ul></li>
+</ul><p><hr /></p>
+<h3>/scanDocument</h3><p><a href="#">iOS</a> <a href="#">macOS</a></p><p>Open Drafts document scanning interface. The resulting text is passed to the <code>x-success</code> callback, and saved as a draft unless the <code>save</code> parameter is used to disable saving.</p><ul>
+<li><strong>Arguments</strong>
+
+<ul>
+<li><strong>save</strong> <em>[boolean]</em> : Default to &#8220;true&#8221;. If &#8220;false&#8221;, the results of the scan will be returned to the callback, but <em>not</em> saved as a draft in Drafts.</li>
+<li><strong>retParam</strong> <em>[string, optional]</em> : The name of the argument to use to pass the draft content back to the x-success URL. Defaults to &#8220;text&#8221;, but if the requesting app expects another value (like Workflow&#8217;s &#8220;input&#8221;) use this argument to override.</li>
+</ul></li>
+<li><strong>Examples</strong>
+
+<ul>
+<li><code>drafts://x-callback-url/scandocument?x-success=APP-URL</code>
+
+<ul>
+<li>Retrieves the content of the identified draft, and calls the x-success URL with the argument <code>text=DICTATED-TEXT</code> added.</li>
+</ul></li>
+</ul></li>
+</ul><p><hr /></p>
+<h3>/arrange</h3><p><a href="#">iOS</a> <a href="#">macOS</a></p><p>Open Drafts arrange interface. Pass the resulting arranged text to the x-success URL instead of saving it in Drafts.</p><ul>
+<li><strong>Arguments</strong>
+
+<ul>
+<li><strong>text</strong> <em>[string, required]</em> : Text to arrange.</li>
+<li><strong>retParam</strong> <em>[string, optional]</em> : The name of the argument to use to pass the draft content back to the x-success URL. Defaults to &#8220;text&#8221;, but if the requesting app expects another value (like Workflow&#8217;s &#8220;input&#8221;) use this argument to override.</li>
+</ul></li>
+<li><strong>Examples</strong>
+
+<ul>
+<li><code>drafts://x-callback-url/arrange?x-success=APP-URL</code>
+
+<ul>
+<li>Retrieves the content of the identified draft, and calls the x-success URL with the argument <code>text=ARRANGED-TEXT</code> added.</li>
+</ul></li>
+</ul></li>
+</ul><p><hr /></p>
+<p><hr /></p>
+<p><a href="https://apps.apple.com/app/apple-store/id1236254471?pt=273342&amp;ct=UserGuide&amp;mt=8"> </a></p><p></body></p>
+<p></html></p>
+
+</head>
